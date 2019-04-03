@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block content %}
+{{ block.super }}
+<div class="container-fluid">
+  <a class="btn modal-trigger" style="float:right;" href="#modal1">Contact</a>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content" style="text-align: center;font-size: x-large;background-color:#00897b;">
+      <h3>Contacts</h3>
+      <ul class="list">
+        <li>
+          Email address: carizeree@gmail.com
+        </li>
+        <li>
+          Phone number: +250783706421
+        </li>
+        <li>
+          Facebook: TuratsinzeIzCarine
+        </li>
+      </ul>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+    </div>
+  </div>
+
+  <script>
+    $(document).ready(function () {
+      $('.modal').modal();
+    });
+  </script>
+  <br><br><br>
+  <h3 style="font-family: 'Cormorant Garamond', serif;">WELCOME TO AWARD</h3>
+  <br>
+  <h4 style="font-family: 'Dancing Script', cursive;text-align: center;">
+    Site of the day {{date|date:"l d-F Y"}}</h4>
+</div>
+{% endblock %}
