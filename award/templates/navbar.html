@@ -55,20 +55,23 @@
         </div>
     </nav>
 
-    <ul id="slide-out" class="sidenav">
-        
+    <ul id="slide-out" class="sidenav" >
+        <h1 class="animated bounceInUp" style="text-align:center;font-family: 'Lobster', cursive;
+        ">MENU</h1>
         <li>
             <div class="user-view">
-                <div class="background">
-                    <img src="templates/static/images/caca.jpg" style="width:100px;height:100px;border-radius:70%;">
+                <div class="">
+                    <img src="https://scontent.fkgl1-1.fna.fbcdn.net/v/t1.0-9/42631814_1296860623784730_1516436653093158912_n.jpg?_nc_cat=103&_nc_ht=scontent.fkgl1-1.fna&oh=74986374e6890cc54e97fa527dd4cbd8&oe=5D460663" style="width:250px;height:400px;border-radius:70%;">
                 </div>
                 <div class="side" style="padding-top:140px;text-align: center;">
                     <a href="#name"><span class="white-text name" style="color:deeppink;">Carine</span></a>
+                    <a class='btn btn-default' href="/accounts/login">Login</a>
                  <ul>
                     <!-- <li><a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Account</a></li> -->
                     <li><a class="nav-link" href="{% url 'index' %}"style="color:deeppink;" >Home</a></li>
                     <li><a class="nav-link" href="/logout" style="color:deeppink;">Logout</a></li>
                     <li><a class="nav-link" href="{% url 'new_projects' %}" style="color:deeppink;">New project</a></li>
+                    <li><a class="nav-link" href="{% url 'myprojects' %}" style="color:deeppink;">All projects</a></li>
                  </ul>
                 </div>
             </div>
