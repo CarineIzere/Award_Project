@@ -32,8 +32,8 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     
-    # 'materialize',
-    # 'bootstrap3',
+    'materialize',
+    'bootstrap3',
     'award.apps.AwardConfig',
     'django.contrib.admin',
     'django.contrib.auth',
