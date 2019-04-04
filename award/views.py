@@ -10,6 +10,7 @@ from .serializer import ProfileSerializer,ProjectSerializer
 from rest_framework import status
 from .permissions import IsAdminOrReadOnly
 import datetime as dt
+from django.contrib.auth.models import User
 
 def convert_dates(dates):
     # function that gets the weekday number for the date.

@@ -75,3 +75,6 @@ class Rating(models.Model):
 
   def delete_rating(self):
     self.delete()
+
+
+
