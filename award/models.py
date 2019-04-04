@@ -12,8 +12,6 @@ class Project(models.Model):
     link = models.TextField(validators=[URLValidator()],null=True)
     profile = models.ForeignKey(User,on_delete=models.CASCADE, null=True)
     
-  
-
     def save_project(self):
         self.save()
 
