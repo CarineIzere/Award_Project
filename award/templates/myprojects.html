@@ -13,7 +13,7 @@
                     <br>
                     <h5>{{project.title}}</h5>
                     <p>{{ project.description | truncatechars:250 }}</p>
-                    <p><a href="{% url 'project' project.id %}"><button type="button" class="btn">View
+                    <p><a href="{% url 'project' project.id %}"><button type="button" class="btn">View The
                                 Project</button></a></p>
                     <hr>
                     {% endfor %}
